@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SiparisAdisyon.Core\SiparisAdisyon.Core.csproj" />
+    <ProjectReference Include="..\SiparisAdisyon.Entity\SiparisAdisyon.Entity.csproj" />
+    <ProjectReference Include="..\SiparisAdisyon.Repository\SiparisAdisyon.Repository.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="9.0.0-preview.3.24172.9" />
+    <PackageReference Include="OneOf" Version="3.0.271" />
+  </ItemGroup>
+
+</Project>
