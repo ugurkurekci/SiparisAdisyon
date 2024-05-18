@@ -8,10 +8,6 @@ namespace SiparisAdisyon.Repository.Abstract;
 public interface IAuthRepository : IBaseRepository<Auth>
 {
 
-    Task<OneOf<Result, Error>> LoginAsync(Auth auth);
-
-    Task<OneOf<Result, Error>> RegisterAsync(Auth auth);
-
-    Task<OneOf<Result, Error>> UserExistsAsync(string username);
+    Task<bool> UserExists(string username);
 
 }
