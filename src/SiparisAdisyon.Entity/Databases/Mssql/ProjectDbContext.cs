@@ -44,8 +44,4 @@ public class ProjectDbContext : DbContext
 
     public DbSet<Table> Table { get; set; }
 
-
-
-
-
 }

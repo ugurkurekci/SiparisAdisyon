@@ -1,4 +1,4 @@
-﻿namespace SiparisAdisyon.Business.Dtos;
+﻿namespace SiparisAdisyon.Business.Dtos.Auths;
 
 public class LoginDto
 {

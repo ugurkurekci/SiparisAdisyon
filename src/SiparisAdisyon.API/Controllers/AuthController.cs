@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SiparisAdisyon.Business.Abstract;
-using SiparisAdisyon.Business.Dtos;
+using SiparisAdisyon.Business.Dtos.Auths;
 
 namespace SiparisAdisyon.API.Controllers;
 [Route("api/[controller]")]

@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using SiparisAdisyon.Business.Dtos;
+using SiparisAdisyon.Business.Dtos.Auths;
 using SiparisAdisyon.Entity.Models;
 
 namespace SiparisAdisyon.Business.Mapper;

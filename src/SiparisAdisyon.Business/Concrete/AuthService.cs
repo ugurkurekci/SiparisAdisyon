@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using OneOf;
 using SiparisAdisyon.Business.Abstract;
-using SiparisAdisyon.Business.Dtos;
+using SiparisAdisyon.Business.Dtos.Auths;
 using SiparisAdisyon.Core.Results;
 using SiparisAdisyon.Core.Utility.Common;
 using SiparisAdisyon.Entity.Models;
