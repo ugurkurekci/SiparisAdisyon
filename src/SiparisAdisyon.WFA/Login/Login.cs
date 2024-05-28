@@ -65,8 +65,13 @@ public partial class Login : Form
             if (usernameTxb.Text == "admin" && passwordTxb.Text == "admin")
             {
                 this.Hide();
-                Login loginForm = new Login();
-                loginForm.Show();
+                Dashboard.Dashboard dashboard = new Dashboard.Dashboard();
+
+                dashboard.Show();
+
+
+
+               
             }
             else
             {
@@ -114,5 +119,10 @@ public partial class Login : Form
     private void exitBtn_MouseLeave(object sender, EventArgs e)
     {
         exitBtn.BackColor = Color.Transparent;
+    }
+
+    private void topPanelPanel_Paint(object sender, PaintEventArgs e)
+    {
+
     }
 }

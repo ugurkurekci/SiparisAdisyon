@@ -148,6 +148,7 @@ partial class Login
         topPanelPanel.Name = "topPanelPanel";
         topPanelPanel.Size = new Size(399, 37);
         topPanelPanel.TabIndex = 0;
+        topPanelPanel.Paint += topPanelPanel_Paint;
         topPanelPanel.MouseDown += topPanelPanel_MouseDown;
         topPanelPanel.MouseMove += topPanelPanel_MouseMove;
         topPanelPanel.MouseUp += topPanelPanel_MouseUp;
