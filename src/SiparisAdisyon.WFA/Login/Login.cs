@@ -1,4 +1,5 @@
 ﻿namespace SiparisAdisyon.WFA.Login;
+
 public partial class Login : Form
 {
     public Login()
@@ -12,9 +13,6 @@ public partial class Login : Form
         if (this.Visible)
         {
             usernameTxb.Focus();
-
-
-
         }
     }
 
@@ -108,13 +106,11 @@ public partial class Login : Form
         exitBtn.BackColor = Color.Transparent;
     }
 
-    // exitbtn üzerine gelince rengi değişsin
     private void exitBtn_MouseEnter(object sender, EventArgs e)
     {
         exitBtn.BackColor = Color.Red;
     }
 
-    // geri gelince eski haline dönsün
     private void exitBtn_MouseLeave(object sender, EventArgs e)
     {
         exitBtn.BackColor = Color.Transparent;
