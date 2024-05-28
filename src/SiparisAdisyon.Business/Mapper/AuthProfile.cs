@@ -11,6 +11,10 @@ public class AuthProfile : Profile
     {
         CreateMap<LoginDto, Auth>();
         CreateMap<RegisterDto, Auth>();
+
+        CreateMap<Auth, PersonalDetailDto>();
+
+
     }
 
 }

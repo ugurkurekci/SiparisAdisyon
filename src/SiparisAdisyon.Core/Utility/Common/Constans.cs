@@ -20,6 +20,8 @@ public static class Constans
     public const string USER_NOT_FOUND = "USER_NOT_FOUND";
 
 
+    public const string ErrorGetAllPersonalDetail = "An error occurred while getting all personal details";
+    public const string ErrorGetAllPersonalDetailCode = "ERROR_GET_ALL_PERSONAL_DETAIL";
 
     //Username Column
     public const string COLUMN_USERNAME = "Username";

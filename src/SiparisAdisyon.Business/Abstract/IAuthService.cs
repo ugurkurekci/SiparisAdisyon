@@ -10,4 +10,6 @@ public interface IAuthService
 
     Task<OneOf<Result, Error>> RegisterAsync(RegisterDto registerDto);
 
+    Task<List<OneOf<PersonalDetailDto, Error>>> GetAllPersonalDetail();
+
 }

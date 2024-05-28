@@ -33,4 +33,19 @@ public class AuthController : ControllerBase
                                                                    error => BadRequest(error)
                                                                                                            );
     }
+
+    [HttpGet("GetAllPersonalDetail")]
+    public async Task<IActionResult> GetAllPersonalDetail()
+    {
+        var result = await _authService.GetAllPersonalDetail();
+        var personalDetailDtos = new List<PersonalDetailDto>();
+        foreach (var item in result)
+        {
+            personalDetailDtos.Add(item.AsT0);
+        }
+
+        return Ok(personalDetailDtos);
+
+    }
+
 }

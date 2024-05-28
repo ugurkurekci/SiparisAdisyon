@@ -69,6 +69,23 @@ public class AuthService : IAuthService
         return new Result { Message = Constans.SuccessAddUser, Code = Constans.SuccessRegisterCode, Success = true };
     }
 
+    public async Task<List<OneOf<PersonalDetailDto, Error>>> GetAllPersonalDetail()
+    {
+
+        var personals = await _authRepository.GetAllAsync<Auth>();
+        List<PersonalDetailDto> personalDetailDtos = _mapper.Map<List<PersonalDetailDto>>(personals);
+
+        if (personalDetailDtos.Count == 0)
+        {
+            return new List<OneOf<PersonalDetailDto, Error>> { new Error { Message = Constans.ErrorGetAllPersonalDetail, Code = Constans.ErrorGetAllPersonalDetailCode, Success = false } };
+        }
+
+        return personalDetailDtos
+                            .Select(dto => (OneOf<PersonalDetailDto, Error>)dto)
+                            .ToList();
+
+    }
+
     private bool VerifyPasswordHash(string password, byte[] passwordHash, byte[] passwordSalt)
     {
 
@@ -99,5 +116,6 @@ public class AuthService : IAuthService
         }
 
     }
+
 
 }
