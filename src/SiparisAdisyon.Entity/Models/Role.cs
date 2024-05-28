@@ -1,8 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using SiparisAdisyon.Core.Entity;
+using System.ComponentModel.DataAnnotations;
 
 namespace SiparisAdisyon.Entity.Models;
 
-public class Role
+public class Role : IEntity
 {
 
     [Key]
