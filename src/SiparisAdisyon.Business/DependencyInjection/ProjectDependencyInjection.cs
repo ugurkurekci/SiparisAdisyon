@@ -20,10 +20,17 @@ public static class ProjectDependencyInjection
 
         services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
         services.AddScoped<IAuthRepository, AuthRepository>();
+        services.AddScoped<IRoleRepository, RoleRepository>();
+
         services.AddScoped<ICategoryRepository, CategoryRepository>();
+        services.AddScoped<ICompanyRepository, CompanyRepository>();
+
+
 
         services.AddScoped<IAuthService, AuthService>();
         services.AddScoped<ICategoryService, CategoryService>();
+
+        services.AddScoped<IRoleService, RoleService>();
 
     }
 }
