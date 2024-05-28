@@ -1,9 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using SiparisAdisyon.Core.Entity;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SiparisAdisyon.Entity.Models;
 
-public class Company
+public class Company : IEntity
 {
 
     [Key]
